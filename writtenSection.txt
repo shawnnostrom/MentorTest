@@ -1,28 +1,28 @@
 Answer each question in a written format
 
-1. What does semantic HTML mean?
+1. What does semantic HTML mean? it's tags to show the browser how information should display but the end user will never see the tags.
 
-2. What is the box model?
+2. What is the box model? it's a box that wraps all html elements.
 
-3. What is the difference between IDs and Classes?
+3. What is the difference between IDs and Classes? ID's should be used once where Classes can be used multiple time in your html. Classes are targeted by .claccname in css where ID's are targeted by #id
 
-4. What is z-index (CSS property) useful for?
+4. What is z-index (CSS property) useful for? z-index can only be used on position of the elements "absolute or relative" , it defines where the current object is in the stack.
 
-5. Summarize what the keyword 'this' is used for?
+5. Summarize what the keyword 'this' is used for? Refers to the object it is used in.
 
-6. What is a callback? What are common uses for callbacks in JavaScript?
+6. What is a callback? What are common uses for callbacks in JavaScript? A function called in another function. To use a function multiple times.
 
-7. What is a closure and why is it useful?
+7. What is a closure and why is it useful? function inside another function where the inner function has access to the outer functions variables.
 
-8. How does a prototype work?
+8. How does a prototype work? it's a pre built function that is accessed by . notation. ie array.map .map is an array prototype.
 
-9. Describe what a component-based framework/library is?
+9. Describe what a component-based framework/library is? React, Angular and Vue are component based libarys they are used to make applications easier to understand and debug.
 
-10. What is the component lifecycle in React?
+10. What is the component lifecycle in React? it tells the app when to display and when to update data. 
 
-11. What is REST? (not just a description of the acronym)
+11. What is REST? (not just a description of the acronym) it's used for building api's to be accessed over http requests
 
-12. Name three common ways of getting data from a request (in Express.JS):
+12. Name three common ways of getting data from a request (in Express.JS): Get, Post, Put
 
 
 
@@ -36,10 +36,12 @@ email varchar(255)
 
 13. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
 
--Get all users:
+-Get all users: select * from users
 
 -Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+insert into users (name,email) values ('shawn','shawnnostrom@gmail.com')
 
 -Update the newly created user's name to 'Bobby Boy':
-
+Update user set name = 'Bobby Boy'
 -Delete the newly updated user:
+Delete from user where name = 'Bobby Boy'
